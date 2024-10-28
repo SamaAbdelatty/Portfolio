@@ -1,0 +1,242 @@
+:root {
+  --main-color: #20c997;
+  --section-padding: 100px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+img,
+video {
+  max-width: 100%;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 97px;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 60%);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 50rem;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.btn-outline-primary:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.btn-primary {
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-primary:hover {
+  background-color: #1baa80;
+}
+.btn-outline-grey {
+  border: 1px solid grey;
+  color: grey;
+  background-color: transparent;
+}
+.btn-outline-grey:hover {
+  background-color: grey;
+  color: white;
+}
+.special-heading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+
+  margin: 0;
+}
+.special-heading span {
+  margin-bottom: 60px;
+  font-size: 94px;
+  display: block;
+}
+.special-heading p {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -130px;
+  position: relative;
+}
+.special-heading p::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  height: 3px;
+  width: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.brief {
+  margin-top: 70px;
+  padding-left: 10px;
+  display: flex;
+}
+.brief .desc {
+  flex-basis: 66%;
+}
+.brief .desc h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.brief .desc h3 span {
+  color: var(--main-color);
+}
+.brief .desc .para-1 {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.brief .desc .para-2 {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.brief .CV {
+  flex-basis: 33%;
+  padding-left: 10px;
+}
+.brief .CV .my-info {
+  padding: 14px 0;
+}
+.brief .CV .my-info:not(:last-child) {
+  border-bottom: 1px solid #ebebeb;
+}
+.brief .CV .my-info p span {
+  font-weight: bold;
+  color: black;
+}
+.brief .CV .my-info .email {
+  color: var(--main-color);
+}
+.main-wrapper {
+  margin-left: 240px;
+}
+.main-wrapper .side-bar {
+  width: 240px;
+  height: 100vh;
+  background-color: #111418;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.main-wrapper .side-bar .info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-wrapper .side-bar .img-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  overflow: hidden;
+  display: inline-block;
+}
+.main-wrapper .side-bar .img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.main-wrapper .side-bar .info h4 {
+  color: white;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.main-wrapper .side-bar .nav .nav-bar {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+.main-wrapper .side-bar .nav .nav-bar .nav-item {
+  padding: 10px;
+}
+.main-wrapper .side-bar .nav .nav-bar .nav-item .nav-link {
+  color: white;
+}
+.main-wrapper .side-bar .nav .nav-bar .nav-item .nav-link:hover {
+  color: #20c997;
+}
+.main-wrapper .side-bar .social {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main-wrapper .side-bar .social a {
+  padding: 0 10px;
+  color: white;
+}
+.main-wrapper .side-bar .social a:hover {
+  color: #20c997;
+}
+.landing {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main-wrapper .content .landing .Welcome-msg {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+.main-wrapper .content .landing .Welcome-msg h4 {
+  font-weight: 500;
+}
+.main-wrapper .content .landing .Welcome-msg h1 {
+  font-weight: bold;
+  display: inline-block;
+}
+.main-wrapper .content .landing .Welcome-msg h1:hover {
+  background-color: var(--main-color);
+}
+.main-wrapper .content .landing .Welcome-msg p {
+  color: #dee3e4;
+}
+.about-me {
+  padding: var(--section-padding) 0;
+}
