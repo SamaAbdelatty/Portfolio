@@ -275,9 +275,10 @@ video {
 }
 .services {
   background-color: rgba(248, 249, 250, 1);
+  padding: var(--section-padding);
 }
 .services .row {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -417,4 +418,235 @@ video {
 }
 .my-work .row .column {
   flex-basis: 33%;
+}
+.testimonial {
+  padding: var(--section-padding);
+}
+.testimonial .opinions {
+  display: flex;
+  flex-basis: 40%;
+  gap: 20px;
+}
+.testimonial .opinions .card {
+  margin-top: 65px;
+  background-color: #ebeced;
+  border-radius: 8px;
+  padding: 30px;
+}
+.testimonial .opinions .card .icon {
+  color: #ffc107;
+  margin-top: 15px;
+}
+.testimonial .opinions .card .opinion {
+  /* padding-left: 63px; */
+  line-height: 1.5;
+  /* padding-right: 50px; */
+  color: #4c4d4d;
+  margin-top: 10px;
+}
+
+.testimonial .opinions .card .header .info {
+  text-align: start;
+}
+.testimonial .opinions .card .header .heading {
+  display: flex;
+  text-align: center;
+}
+.testimonial .opinions .card .img-container {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.testimonial .opinions .card .img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.testimonial .opinions .card .header p {
+  color: black;
+  font-weight: 800;
+  line-height: 1.8;
+  padding: 5px;
+}
+.testimonial .opinions .first-card .header .country span {
+  color: #6c757d;
+}
+.contact {
+  padding: var(--section-padding);
+  background-color: rgba(248, 249, 250, 10);
+}
+.contact .container .general-info {
+  margin-top: 45px;
+  flex-basis: 33%;
+}
+.contact .container .general-info .address p {
+  margin-top: 11px;
+  line-height: 1.7;
+  color: #4c4d4d;
+}
+.contact .container .general-info .mobile-number {
+  margin-top: 10px;
+  color: #4c4d4d;
+}
+.contact .container .general-info .mobile-number .link {
+  list-style: none;
+  line-height: 2;
+}
+.contact .container .general-info .mobile-number .link i {
+  color: var(--main-color);
+}
+.contact .container .general-info .social-contact h3 {
+  padding: 23px 5px 23px 0;
+}
+.contact .container .general-info .social-contact .icon {
+  display: flex;
+  gap: 20px;
+}
+.contact .container .general-info .social-contact .icon a {
+  color: #4c4d4d;
+}
+.contact .container .general-info .social-contact .icon a:hover{
+  color: var(--main-color);
+  cursor: pointer;
+}
+.contact .container .get-in-touch{
+  display: flex;
+}
+.contact .container .form{
+  padding: 20px;
+
+  margin-bottom: 30px;
+  width: 100%;
+  flex-basis: 66%;
+}
+.contact .container .form .button{
+  text-align: center;
+}
+.contact .container .get-in-touch .form .main-input{
+  width: 100%;
+  margin-top: 45px;
+  height: 40px;
+  border: 1px solid #dae1e3;
+  border-radius: 5px;
+  padding: 12px;
+}
+.contact .container .get-in-touch .form textarea.main-input {
+  width: 100%;
+  height: 100px;
+}
+.footer .copyrights{
+  padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .copyrights .terms span:first-child{
+  border-right: 1px solid #252b33;
+  padding-right: 15px;
+}
+.footer .copyrights .terms span:last-child{
+  padding-left: 15px;
+
+}
+.footer .copyrights p span{
+  color: var(--main-color);
+}
+@media (max-width:992px) {
+  .side-bar{
+    display: none !important;
+
+  }
+  .main-wrapper{
+    margin-left: 0;
+  }
+}
+@media (max-width:992px) {
+  .special-heading span {
+    font-size: 70px;
+  }
+  
+}
+@media (max-width:992px) {
+  .services .row{
+  display: block !important;
+  }
+  
+}
+@media (max-width:400px) {
+  .brief{
+    padding-left: 0;
+    display: block !important;
+  }
+  
+}
+@media (max-width:400px){
+  .statistics .row{
+    display: block;
+    border-left: none;
+  }
+}
+@media (max-width:400px){
+  .services{
+    padding: 0;
+  }
+}
+@media (max-width:400px) {
+  .special-heading span {
+    font-size: 50px;
+  }
+  
+}
+@media (max-width:400px){
+  .summary .row{
+    display: block;
+  }
+}
+@media (max-width:400px){
+  .my-work .special-heading span{
+    font-size: 40px;
+  }
+}
+@media (max-width:400px){
+  .testimonial{
+    padding: 0;
+  }
+}
+@media (max-width:400px){
+  .testimonial .special-heading span{
+    font-size: 35px;
+  }
+}
+@media (max-width:400px){
+  .testimonial .special-heading{
+    margin-top: 50px;
+  }
+}
+@media (max-width:400px){
+  .testimonial .opinions{
+    display: block;
+  }
+}
+@media (max-width:400px){
+  .contact .special-heading span{
+    font-size: 35px;
+
+  }
+}
+@media (max-width:400px){
+  .contact .container .get-in-touch{
+    display: block;
+  }
+}
+@media (max-width:400px) {
+  .contact .container .general-info .address p{
+    line-height: 1;
+  }
+  
+}
+@media (max-width:400px) {
+  :root{
+    --section-padding: 10px;
+  }
+  
 }
